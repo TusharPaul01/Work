@@ -6,6 +6,9 @@ app = Flask(__name__)
 def welcome():
     return "Welcome to my youtube channel"
 
+@app.route('/family')
+def family():
+    return "Welcome to my youtube family!"
 
 if __name__ == '__main__':
-    app.run(debug= True)
+    app.run(debug=True)
